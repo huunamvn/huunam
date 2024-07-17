@@ -1,0 +1,52 @@
+
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+}
+.admin-h1{
+    text-decoration: none;
+    text-align: center;
+   color: #fff;
+}
+
+
+.admin-header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1528px;
+}
+
+.admin-header h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+
+.admin-nav ul {
+    list-style: none;
+}
+
+.admin-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.admin-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.admin-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.admin-nav ul li a:hover {
+    color: #ffdb58;
+}

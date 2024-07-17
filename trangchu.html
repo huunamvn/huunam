@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án mẫu</title>
+   <link rel="stylesheet" href="../view/trangchu.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    
+}
+
+img {
+    width: 100%;
+}
+.box-sp-top5{
+    margin-bottom: 14px;
+    border-bottom: 1px solid#dedcdc;
+}
+.img-sp-top5{
+    width: 15%;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+    float: left;
+}
+
+.name-sp-top5 a{
+    text-decoration: none;
+    color: black;
+}
+
+.name-sp-top5 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.box-title{
+    background-color: #eee;
+    padding: 10px 20px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.box-content{
+    min-height: 200px;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 20px;
+    line-height: 130%;
+}
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FF6666; 
+        color: #fff; 
+        padding: 20px; 
+        width: 1000px; 
+        margin: 0 auto; 
+    }
+
+   
+    .footer-item {
+        flex: 1; 
+        padding: 10px; 
+    }
+    .footer-item h3 {
+        font-size: 18px; 
+        margin-bottom: 10px; 
+    }
+    .footer-item a {
+        color: #fff; 
+        text-decoration: none; 
+        display: block; 
+        margin-bottom: 5px;
+    }
+
+    
+    .footer-item a:hover {
+        text-decoration: underline;
+    }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="tong">
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1>Cửa hàng điện tử</h1>
+        </div>
+        <div class="row mb menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+        </div>
+        <div class="row mb">
+            <div class="boxtrai mr">
+                <div class="row">
+                    <div class="banner">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="img/img/anh1.webp" alt="Slide 1">
+                            </div>
+                    
+                            <div class="mySlides fade">
+                                <img src="img/img/anh2.webp" alt="Slide 2">
+                            </div>
+                    
+                            <div class="mySlides fade">
+                                <a href="#"><img src="img/img/anh3.webp" alt="Slide 3"></a>
+                            </div>
+                            <div class="mySlides fade">
+                                <a href="#"><img src="img/img/anh4.webp" alt="Slide 3"></a>
+                            </div>
+                            <div class="mySlides fade">
+                                <a href="#"><img src="img/img/anh5.webp" alt="Slide 3"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        let slideIndex = 0;
+                    
+                        function showSlides() {
+                            let slides = document.getElementsByClassName("mySlides");
+                            for (let i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {
+                                slideIndex = 1;
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            setTimeout(showSlides, 2000); 
+                        }
+                    
+                        showSlides(); // Start the slideshow
+                    </script>
+                </div>
+                <div class="row">
+                
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="img/img/anh2.webp" alt=""></div>
+                        <p>$1000</p>
+                        <a href="#">Điện thoại</a>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="img/img/anh3.webp" alt=""></div>
+                        <p>$900</p>
+                        <a href="#">Điện thoại</a>
+                    </div>
+                    <div class="boxsp  ">
+                        <div class="row img"><img src="img/img/dongho1.webp" alt=""></div>
+                        <p>$30</p>
+                        <a href="#">Đồng hồ</a>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img">Điện thoại<img src="img/img/anh7.jpg" alt=""></div>
+                        <p>$600</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="img/img/maytinh1.jpg" alt=""></div>
+                        <p>$300</p>
+                        <a href="#">Máy tính</a>
+                    </div>
+                    <div class="boxsp  ">
+                        <div class="row img"><img src="img/img/dongho4.png" alt=""></div>
+                        <p>400</p>
+                        <a href="#">Đồng hồ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxphai">
+                <div class="row mb">
+                    <div class="boxtitle">TÀI KHOẢN</div>
+                    <div class="boxcontent formtaikhoan">
+                        <form action="#" method="post">
+                            <div class="row mb10">
+                                Tên đăng nhập <br>
+                                <input type="text" name="user" id="">
+                            </div>
+                            <div class="row mb10">
+                                Mật Khẩu
+                                <input type="password" name="pass" id="" required>
+                            </div>
+                            <div class="row mb10">
+                                <input type="checkbox" name="" id="" > Ghi nhớ tài khoản ?
+                            </div>
+                            <div class="row mb10">
+                                <input type="submit" value="Đăng nhập">
+                            </div>
+                        </form>
+                        <ul>
+                            <li><a href="#">Quên mật khẩu</a></li>
+                            <li><a href="#">Đăng kí thành viên</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="boxtitle">DANH MỤC</div>
+                    <div class="boxcontent2 menudoc">
+                        <ul>
+                            <li><a href="#">Đồng hồ</a></li>
+                            <li><a href="#">Laptop</a></li>
+                            <li><a href="#">Điện thoại</a></li>
+                            <li><a href="#">Ba lô</a></li>
+                            <li><a href="#">Điện thoại</a></li>
+                            <li><a href="#">Ba lô</a></li>
+                            <li><a href="#">Ba lô</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="box-title">TOP 5 YÊU THÍCH</div>
+                    <div class="box-content">
+                        <div class="box-sp-top5">
+                            <img src="img/img/anh4.webp" alt="" class="img-sp-top5">
+                            <div class="name-sp-top5"><a href="#">iPhone 15 Pro Max 256GB Chính Hãng VN/A</a></div>
+                        </div>
+                        <div class="box-sp-top5">
+                            <img src="img/img/anh5.webp" alt="" class="img-sp-top5">
+                            <div class="name-sp-top5"><a href="#">iPhone 15 Plus 128GB Chính Hãng VN/A</a></div>
+                        </div>
+                        <div class="box-sp-top5">
+                            <img src="img/img/anh7.jpg" alt="" class="img-sp-top5">
+                            <div class="name-sp-top5"><a href="#">iPhone 14 Pro 128GB cũ đẹp 99%</a></div>
+                        </div>
+                        <div class="box-sp-top5">
+                            <img src="img/img/anh8.jpg" alt="" class="img-sp-top5">
+                            <div class="name-sp-top5"><a href="#">iPhone 14 Plus 128GB cũ đẹp 99%</a></div>
+                        </div>
+                        <div class="box-sp-top5">
+                            <img src="img/img/anh6.jpg" alt="" class="img-sp-top5">
+                            <div class="name-sp-top5"><a href="#">Samsung Galaxy Z Fold5 12GB 256GB Chính Hãng</a></div>
+                        </div>
+                        
+                    </div>
+                    
+                
+                    </div>
+                    
+                  
+                </div>
+                
+            </body>
+            <footer>
+                <div class="footer-1">
+                    <div class="footer-content">
+                        <div class="footer-item">
+                            <br>
+                            <h3><i class="fas fa-phone"></i> Liên hệ</h3>
+                            <p><i class="fas fa-phone" ></i> Số điện thoại: +123456789</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: 123 Đường ABC, Quận XYZ, TP HCM</p>
+                        </div>
+                        <div class="footer-item">
+                            <h3><i class="fab fa-facebook"></i> Mạng xã hội</h3>
+                            <a href="https://www.facebook.com/yourfacebookpage" target="_blank"><i class="fab fa-facebook"></i> Facebook</a><br>
+                            <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+      
+            </footer>
+            </html>
+                
+<li><a href=""></a></li>
