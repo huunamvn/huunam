@@ -17,6 +17,8 @@ if(isset ($_GET['act'])){
                 $thongbao="Thêm thành công";
             }
             break;
+
+            // dakjạkdahksgduýagdjhsagdyhsad
         case "listdm":
             $dsloai=loadall_danhmuc();
             include "loai/list.php";
